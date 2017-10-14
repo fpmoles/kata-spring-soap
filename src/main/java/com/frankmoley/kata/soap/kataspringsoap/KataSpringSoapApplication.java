@@ -16,7 +16,7 @@ public class KataSpringSoapApplication {
     }
 
     @Bean
-    public CurrencyClient weatherClient(){
+    public CurrencyClient currencyClient(){
         CurrencyClient client = new CurrencyClient();
         client.setDefaultUri("http://www.webservicex.net/CurrencyConvertor.asmx");
         client.setMarshaller(marshaller());
